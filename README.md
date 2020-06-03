@@ -9,6 +9,8 @@
 
 # JavaScript
 
+### [数据类型转换](/JavaScript/数据类型转换.md)
+
 ### [数组方法](/JavaScript/array.md)
 
 ### [理解原型模式](/JavaScript/prototype.md)

@@ -32,6 +32,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
+                    '/JavaScript/数据类型转换',
                     '/JavaScript/array',
                     '/JavaScript/prototype',                   
                 ] 
