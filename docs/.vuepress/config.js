@@ -49,17 +49,37 @@ module.exports = {
             },
         ],
 
-
         lastUpdated: 'Last Updated',
-        smoothScroll: false,
-        markdown: {
-            lineNumbers: true
-        },
+        smoothScroll: false,          
+    },
 
-        valineConfig: {
-            appId: '',
-            appKey: '',
-        }
-      
-    }
+    markdown: {
+        lineNumbers: true
+    },
+
+    plugins: [
+        // [
+        //     'vuepress-plugin-comment',
+        //     {
+        //     choosen: 'valine',
+        //     options: {
+        //         el: '#valine-vuepress-comment',
+        //         appId: 'LkHcwhqjnKRX27wQ9SndPQVH-gzGzoHsz',
+        //         appKey: 'ojD5hwRlu6Tz4xGK7y3L8he8',
+        //         placeholder: '快来发表你的评论吧~',
+        //         path: ''
+        //         }
+        //     }
+        // ],
+
+        ['@vuepress/back-to-top'],
+
+        [
+            '@vuepress/google-analytics',
+            {
+              'ga': 'UA-169000468-1' 
+            }
+        ]
+
+    ]   
 }
