@@ -34,13 +34,13 @@ function aaa(){
 }
 
 aaa.prototype;
-{constructor: ƒ}
-    constructor: ƒ aaa()
-    __proto__: Object
+// {constructor: ƒ}
+//     constructor: ƒ aaa()
+//     __proto__: Object
 
 aaa.prototype.constructor;
-ƒ aaa(){
-}
+// ƒ aaa(){
+// }
 ```
 
 
@@ -57,27 +57,27 @@ Person.prototype.sayName = function() {
 }
 
 Person.prototype.constructor;
-ƒ Person(){
-}
+// ƒ Person(){
+// }
 
 person1.constructor;
-ƒ Person(){
-}
+// ƒ Person(){
+// }
 ```
 - 检查某实例的原型
 
 ```js
 alert(Person.prototype.isPrototypeOf(person1));
-true
+// true
 ```
 - 获取对象的原型
 
 ```js
 Object.getPrototypeOf(person1);
-{name: "Nicolas", age: 29, sayName: ƒ, constructor: ƒ}
+// {name: "Nicolas", age: 29, sayName: ƒ, constructor: ƒ}
 
 Object.getPrototypeOf(person1).name;
-"Nicolas"
+// "Nicolas"
 ```
 
 
@@ -96,12 +96,12 @@ Person.prototype.sayName = function() {
 var person1 = new Person();
 
 Person.prototype.constructor;
-ƒ Person(){
-}
+// ƒ Person(){
+// }
 
 person1.constructor;
-ƒ Person(){
-}
+// ƒ Person(){
+// }
 ```
 
 - 实例对象可以改写原型属性，不改变原型的属性
@@ -120,16 +120,16 @@ Person.prototype.sayName = function() {
 var person1 = new Person();
 
 person1.name;
-"Nicolas" // 来自原型
+// "Nicolas" // 来自原型
 
 person1.name = "Greg";
-"Greg"
+// "Greg"
 
 // 删除实例对象的属性
 delete person1.name;
 
 person1.name;
-"Nicolas" // 来自原型
+// "Nicolas" // 来自原型
 ```
 
 - hasOwnProperty()检测属性是实例对象还是原型对象的
@@ -137,10 +137,10 @@ person1.name;
 
 ```js
 person1.hasOwnProperty("name");
-false // 原型对象的属性返回false
+// false // 原型对象的属性返回false
 
 "name" in person1;
-true
+// true
 ```
 
 - for-in 循环返回对象可枚举的属性 enumerable，包括实例和原型属性
@@ -160,26 +160,26 @@ Person.prototype.sayName = function() {
 var person1 = new Person();
 
 Object.keys(Person.prototype);
-["name", "age", "sayName"]
+// ["name", "age", "sayName"]
 
 Object.keys(person1);
-[]
+// []
 
 person1.name = "Wheatley"; 
 person1.age = 23;
 
 Object.keys(person1);
-["name", "age"]
+// ["name", "age"]
 ```
 
 - Object.getOwnPropertyNames()获取所有属性
 
 ```js
 Object.getOwnPropertyNames(person1);
-["name", "age"]
+// ["name", "age"]
 
 Object.getOwnPropertyNames(Person.prototype);
-["constructor", "name", "age", "sayName"]
+// ["constructor", "name", "age", "sayName"]
 ```
 
 - 使用对象字面量重写原型属性
