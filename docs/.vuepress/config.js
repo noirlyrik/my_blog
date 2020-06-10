@@ -38,6 +38,15 @@ module.exports = {
                     '/JavaScript/prototype',                   
                 ] 
             },
+            { 
+                title: 'Vue',
+                path: '/',
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    '/Vue/vue入门',                 
+                ] 
+            },
         ],
 
 
