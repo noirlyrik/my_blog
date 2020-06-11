@@ -18,6 +18,9 @@
 
 ### [理解原型模式](/JavaScript/prototype.md)
 
+### [原型链](/JavaScript/原型链.md)
+
+
 ## Vue
 
 ### [Vue基础概念](/Vue/vue入门.md)

@@ -35,7 +35,8 @@ module.exports = {
                     '/JavaScript/数据类型转换',
                     '/JavaScript/array',
                     '/JavaScript/20200604闭包',
-                    '/JavaScript/prototype',                   
+                    '/JavaScript/prototype',   
+                    '/JavaScript/原型链',                  
                 ] 
             },
             { 
