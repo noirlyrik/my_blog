@@ -1,6 +1,6 @@
 
 
-# 基础概念
+# [基础概念](https://cn.vuejs.org/v2/guide/index.html)
 
 ## 指令
 
@@ -60,7 +60,7 @@ Vue.component
         v-for="item in List"
         v-bind:todo="item"
         v-bind:key="item.id">
-    </todo-item>
+        </todo-item>
     </ol>
 
 
