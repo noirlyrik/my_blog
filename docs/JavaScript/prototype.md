@@ -44,7 +44,7 @@ aaa.prototype.constructor;
 ```
 
 
-![image](https://cdn.nlark.com/yuque/0/2020/png/419446/1588745505717-0f89cf70-1c6e-4998-9792-babff750d6ac.png?x-oss-process=image%2Fresize%2Cw_1296)
+![image](../.vuepress/public/prototype-1.png)
 
 ```js
 function Person(){
@@ -207,7 +207,7 @@ Object.defineProperty(Person.prototype, "constructor",{
 
 - 原型的属性可以添加和修改，但重写属性会切断原型和之前已有的实例之间的关系
 
-![image](https://cdn.nlark.com/yuque/0/2020/png/419446/1588755820755-cca1dc3b-ada5-4584-99b6-47bd3c0fabd3.png)
+![image](../.vuepress/public/prototype-2.png)
 
 - 问题：引用类型的共享
 

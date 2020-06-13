@@ -2,7 +2,7 @@
 
 ## 添加样式
 
-关于 CSS3 可以查阅： http://www.w3school.com.cn/css/css_jianjie.asp
+关于 CSS3 可以查阅 [w3c的简介](http://www.w3school.com.cn/css/css_jianjie.asp) 
 
 > 样式表定义如何显示 HTML 元素，就像 HTML 3.2 的字体标签和颜色属性所起的作用那样。样式通常保存在外部的 .css 文件中。通过仅仅编辑一个简单的 CSS 文档，外部样式表使你有能力同时改变站点中所有页面的布局和外观。
 
@@ -16,7 +16,7 @@ CSS 规则由两个主要的部分构成：选择器，以及一条或多条声�
 
 如果要定义不止一个声明，则需要用分号将每个声明分开。
 
-![image](http://www.w3school.com.cn/i/ct_css_selector.gif)
+![image](../.vuepress/public/css-1.gif)
 
 CSS 选择器有很多种，比如派生选择器，id 选择器，类选择器等等。派生选择器
 通过依据元素在其位置的上下文关系来定义样式，比如 li 标签里的 strong 元素，可以这样表示：
@@ -42,7 +42,7 @@ id 选择器以 "#" 来定义。
 
 打开Chrome浏览器，f12，选择一个元素拉到最下方，就可以看到这样一个盒子：
 
-![image](https://user-gold-cdn.xitu.io/2017/10/25/cfff88aff482f7dd89d60d7498695450?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![image](../.vuepress/public/css-box.png)
 
 这个盒子的代码是这样的：
 
