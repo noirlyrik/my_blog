@@ -4,7 +4,7 @@ module.exports = {
 
     themeConfig: {
         nav: [
-            { text: 'GitHub', link: 'https://github.com/noirlyrik/noirlyrik.github.io'}
+            { text: 'GitHub', link: 'https://github.com/noirlyrik'}
         ],
 
         sidebar: [
@@ -59,19 +59,19 @@ module.exports = {
     },
 
     plugins: [
-        // [
-        //     'vuepress-plugin-comment',
-        //     {
-        //     choosen: 'valine',
-        //     options: {
-        //         el: '#valine-vuepress-comment',
-        //         appId: 'LkHcwhqjnKRX27wQ9SndPQVH-gzGzoHsz',
-        //         appKey: 'ojD5hwRlu6Tz4xGK7y3L8he8',
-        //         placeholder: '快来发表你的评论吧~',
-        //         path: ''
-        //         }
-        //     }
-        // ],
+        [
+            'vuepress-plugin-comment',
+            {
+            choosen: 'valine',
+            options: {
+                el: '#valine-vuepress-comment',
+                appId: 'LkHcwhqjnKRX27wQ9SndPQVH-gzGzoHsz',
+                appKey: 'ojD5hwRlu6Tz4xGK7y3L8he8',
+                placeholder: '',
+                path: ''
+                }
+            }
+        ],
 
         ['@vuepress/back-to-top'],
 
