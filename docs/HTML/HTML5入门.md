@@ -4,7 +4,7 @@
 
 f12或右键选择检查打开调试器。
 
-![image](../.vuepress/public/html-1.webp)
+![image](../.vuepress/public/html-1.png)
 
 最上面一栏有好几个选项，如elements，console，sources等等。最左边是一个指针，用这个指针可以在页面上选择元素并查看它的代码，旁边的按钮可以查看网页在不同尺寸下的样式。
 - 在elements部分我们可以看到网页的源代码，还可以在这里修改网页结构和样式，查看元素的盒模型等等。
