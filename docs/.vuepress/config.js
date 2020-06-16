@@ -46,7 +46,8 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     '/Vue/vue入门',                     
-                    '/Vue/创建实例'
+                    '/Vue/创建实例',
+                    '/Vue/markdown-notebook'
                 ] 
             },
         ],
