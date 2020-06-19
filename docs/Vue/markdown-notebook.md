@@ -85,6 +85,6 @@ Vue.filter()
 
 模板：
 ```js
-{{ someData | filterdData }}
+{{ someData | filteredData }}
 ```
 

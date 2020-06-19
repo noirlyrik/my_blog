@@ -32,7 +32,9 @@ join()
 
 接受分隔符作为参数，返回字符串
 
-## 4. 栈方法
+## 4. 数组方法
+
+### 栈方法
 
 后进先出
 
@@ -40,7 +42,7 @@ push() 后进
 
 pop() 后出
 
-## 5. 队列方法
+### 队列方法
 
 先进先出
 
@@ -48,13 +50,13 @@ shift() 先出
 
 push() 后进
 
-### 反向队列
+#### 反向队列
 
 unshift() 先进
 
 pop() 后出
 
-### 栈和队列
+#### 栈和队列
 
 | 添加         | 删除       | 位置     |
 | ------------ | ---------- | -------- |
@@ -65,7 +67,7 @@ pop() 后出
 
 
 
-## 6. 重排序
+### 重排序
 
 reverse()
 
@@ -81,8 +83,7 @@ function compare(value1, value2) {
 }
 ```
 
-
-## 7. 排序
+### 操作方法
 
 - reverse()
     - array.reverse()倒序
@@ -90,7 +91,6 @@ function compare(value1, value2) {
     - array.sort(compare函数)
     - array.sort() 根据字符串排序
 
-## 8. 筛选
 
 - concat()
     - array.concat()复制
@@ -102,7 +102,7 @@ function compare(value1, value2) {
     - array.splice(1起始位置, 1删除项数, new插入项可省略)
 
 
-## 9. 迭代
+### 迭代
 
 - every() 
     - array.every() 
@@ -113,17 +113,17 @@ function compare(value1, value2) {
 
 ```javascript
 var numbers = [1,2,3,4,5,4,3,2,1];
-// undefined
+
 var everyResult = numbers.every(function(item, index, array){
     return (item > 2);
     });
-// undefined
+
 everyResult;
 // false
 var someResult = numbers.some(function(item, index, array) {
     return (item > 2);
     });
-// undefined
+
 someResult;
 // true
 ```
@@ -139,7 +139,7 @@ var numbers = [1,2,3,4,5,4,3,2,1];
 var filterResult = numbers.filter(function(item, index, array) {
     return (item > 2);
     });
-// undefined
+
 filterResult;
 // [ 3, 4, 5, 4, 3 ]
 ```
@@ -155,17 +155,18 @@ var numbers = [1,2,3,4,5,4,3,2,1];
 var mapResult = numbers.map(function(item, index, array) {
     return item * 2;
     });
-// undefined
+
 mapResult;
 // [ 2, 4, 6, 8, 10, 8, 6, 4, 2 ]
 ```
 
-- forEach() ==for循环==
+- forEach() 
+    - 类似for循环
     - array.forEach(function)
     - 对每项使用函数
 
 
-## 10. 位置
+### 位置
 
 - array.indexOf()
     - array.indexOf(1数组项, 4起始位置可省略)
@@ -176,19 +177,19 @@ mapResult;
 
 
 
-## 11. 回调
+### 归并
 
 - reduce()
     - array.reduce(function)
 
 ```js
 var values = [1,2,3,4,5];
-// undefined
+
 
 var sum = values.reduce(function(prev, cur, index, array) {
     return prev + cur;
     });
-// undefined
+
 sum;
 // 15
 ```
