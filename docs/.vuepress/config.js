@@ -48,7 +48,7 @@ module.exports = {
                     '/Vue/vue入门',                     
                     '/Vue/创建实例',
                     '/Vue/markdown-notebook',
-                    '/Vur/superHero-demo',
+                    '/Vue/superHero-demo',
                 ] 
             },
         ],
