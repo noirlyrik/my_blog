@@ -1,83 +1,24 @@
 module.exports = {
-    title: 'noirlyrik的博客',
-    description: 'noirlyrik的博客',
+    title: 'Julia 的博客',
+    description: 'Julia 的博客',
 
     themeConfig: {
         nav: [
             { text: 'GitHub', link: 'https://github.com/noirlyrik/noirlyrik.github.io'}
         ],
-
-        sidebar: [
-            { 
-                title: 'HTML',
-                path: '/',
-                collapsable: true,
-                sidebarDepth: 1,
-                children: [
-                    '/HTML/HTML5入门'
-                ]
-            },
-            { 
-                title: 'CSS',
-                path: '/',
-                collapsable: true,
-                sidebarDepth: 1,
-                children: [
-                    '/CSS/CSS布局入门',
-                ] 
-            },
-            { 
-                title: 'JavaScript',
-                path: '/',
-                collapsable: true,
-                sidebarDepth: 1,
-                children: [
-                    '/JavaScript/数据类型转换',
-                    '/JavaScript/array',
-                    '/JavaScript/20200604闭包',
-                    '/JavaScript/prototype',   
-                    '/JavaScript/原型链',                  
-                ] 
-            },
-            { 
-                title: 'Vue',
-                path: '/',
-                collapsable: true,
-                sidebarDepth: 1,
-                children: [
-                    '/Vue/vue入门',                     
-                    '/Vue/创建实例',
-                    '/Vue/markdown-notebook',
-                    '/Vue/superHero-demo',
-                ] 
-            },
-        ],
-
+        sidebar: 'auto',
         lastUpdated: 'Last Updated',
-        smoothScroll: false,          
+        smoothScroll: false, 
+        nextLinks: true,
+        prevLinks: true         
     },
 
     markdown: {
-        lineNumbers: true
+        lineNumbers: false
     },
 
     plugins: [
-        // [
-        //     'vuepress-plugin-comment',
-        //     {
-        //     choosen: 'valine',
-        //     options: {
-        //         el: '#valine-vuepress-comment',
-        //         appId: 'LkHcwhqjnKRX27wQ9SndPQVH-gzGzoHsz',
-        //         appKey: 'ojD5hwRlu6Tz4xGK7y3L8he8',
-        //         placeholder: '快来发表你的评论吧~',
-        //         path: ''
-        //         }
-        //     }
-        // ],
-
         ['@vuepress/back-to-top'],
-
         [
             '@vuepress/google-analytics',
             {
